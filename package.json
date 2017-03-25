@@ -1,7 +1,7 @@
 {
   "name": "areactapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Template for React App",
   "main": "index.js",
   "dependencies": {
     "react": "^15.4.2"
@@ -20,7 +20,8 @@
   },
   "scripts": {
     "build": "node ./node_modules/webpack/bin/webpack.js",
-    "watch": "npm run -- build --watch" ,
+    "watch": "npm run -- build --watch",
+    "devserver": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base public/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michiel van Wessem",
