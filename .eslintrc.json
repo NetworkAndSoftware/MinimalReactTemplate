@@ -5,27 +5,23 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "extends": "eslint:recommended" 
+    "extends": "eslint:recommended"
   },
   "rules": {
-    "indent": 2,
+    "indent": [2, 2],
     "quotes": [ 1, "single", "avoid-escape" ],
     "semi": [ 2, "never" ],
-    "brace-style": [2, "1tbs"],
+    "brace-style": [ 2, "1tbs" ],
     "new-cap": 1,
     "strict": 1,
-    "no-unused-vars": [
-      2,
-      {
-        "vars": "local",
-        "args": "none"
-      }
-    ],
     "no-underscore-dangle": 0,
     "no-new": 0,
     "camelcase": 1,
     "no-trailing-spaces": 1,
     "no-multiple-empty-lines": 2,
     "no-irregular-whitespace": 1
-  }
+  },
+  "plugins": [
+    "react"
+  ]
 }

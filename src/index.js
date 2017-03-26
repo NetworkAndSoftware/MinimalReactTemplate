@@ -1,9 +1,8 @@
+import ReactDOM from 'react-dom'
+import React from 'react'
+import HelloWorldComponent from 'HelloWorldComponent'
 
-const output = () =>  {
-    document.write('hello hello')
-
-
-}
-
-
-output()
+ReactDOM.render(
+  <HelloWorldComponent />
+  , document.getElementById('application')
+)
