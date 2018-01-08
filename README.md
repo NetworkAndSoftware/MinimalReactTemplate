@@ -2,11 +2,11 @@ This is a basic template for a React application using es6 and Webpack for bundl
 
 To run this, clone the repository, makes sure npm is installed on your system and run
 
- npm install
+>npm install
 
 to install all the dependent packages, then 
 
- npm run build
+>npm run build
 
 to transpile and bundle.
 
