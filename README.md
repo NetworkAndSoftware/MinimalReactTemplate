@@ -1,3 +1,5 @@
+#MinimalReactTemplate
+
 This is a basic template for a React application using es6 and Webpack for bundling. 
 
 To run this, clone the repository, makes sure [Yarn](https://yarnpkg.com/) is installed on your system and run
