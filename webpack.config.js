@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
+  mode: 'development',
   output: {
     path: path.resolve(__dirname, "public/dist"), // string
     publicPath: "/dist/",
@@ -16,8 +17,8 @@ module.exports = {
           {
             loader: "babel-loader",
             options: {
-              presets: ["env", "react"]
-            },
+              presets: ["@babel/preset-env", "@babel/preset-react"
+]            },
           },
           {
             loader: "eslint-loader",
