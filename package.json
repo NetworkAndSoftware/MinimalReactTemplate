@@ -20,8 +20,8 @@
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
-    "build": "node ./node_modules/webpack/bin/webpack.js",
-    "watch": "npm run -- build --watch",
+    "build": "node node_modules/webpack/bin/webpack.js",
+    "watch": "yarn build --watch",
     "devserver": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base public/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
