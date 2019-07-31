@@ -1,8 +1,9 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import HelloWorldComponent from 'HelloWorldComponent'
+import App from 'App'
 
 ReactDOM.render(
-  <HelloWorldComponent date={new Date()} />
+  <App />
   , document.getElementById('application')
 )
