@@ -19,3 +19,7 @@ During development it may be more convenient to run
 >yarn devserver
 
 This will start a local web server on port 8080. You can then open <http://localhost:8080/webpack-dev-server/> in your browser and whenever you make changes to any files webpack will rebuild the application and reload the web browser and display any error messages there.
+
+##Redux
+
+There is a branch called Redux which contains a basic redux setup.
