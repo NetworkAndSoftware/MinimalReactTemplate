@@ -1,13 +1,11 @@
-import { UPDATE_DATETIME } from './actions'
+import { combineReducers } from 'redux'
+import dateReducer from 'reducers/dateReducer'
+import {connectRouter } from 'connected-react-router'
 
-const dateInitialState = new Date()
 
-export const dateReducer = (state = dateInitialState, action) => {
-  switch (action.type) {
-  case UPDATE_DATETIME:
-    return action.datetime
-  default:
-    return state
-  }
-}
+const createRootReducer = (history) => combineReducers({
+  'router': connectRouter(history),
+  'date': dateReducer
+})
 
+export default createRootReducer
