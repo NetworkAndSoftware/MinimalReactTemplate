@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 import {updateDateTime} from '../actionCreators'
 import './Time.scss'
 
@@ -26,6 +27,11 @@ class TimeComponent extends React.Component {
       </React.Fragment>
     )
   }
+}
+
+TimeComponent.propTypes = {
+  updateDateTime: PropTypes.func,
+  date: PropTypes.object
 }
 
 const mapStateToProps = state => ({
