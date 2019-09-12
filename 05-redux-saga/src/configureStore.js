@@ -2,18 +2,21 @@ import { createBrowserHistory } from 'history'
 import { createStore, applyMiddleware, compose } from 'redux'
 import createRootReducer from './reducers'
 import { routerMiddleware } from 'connected-react-router'
+import createSagaMiddleware from 'redux-saga'
 
 export const history = createBrowserHistory()
+export const sagaMiddleware = createSagaMiddleware()
 
-const composeEnhacers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 export default function configureStore(preloadedState) {
   const store = createStore(
     createRootReducer(history),
     preloadedState,
-    composeEnhacers(
+    composeEnhancers(
       applyMiddleware(
-        routerMiddleware(history)
+        routerMiddleware(history),
+        sagaMiddleware
       )
     )
   )

@@ -1,8 +1,9 @@
 import React from 'react'
-import Time from 'components/Time'
 import { Navbar, Nav  } from 'react-bootstrap'
 import { Route, Switch } from 'react-router'
 import { LinkContainer} from 'react-router-bootstrap'
+import Time from 'components/Time'
+import Weather from 'components/Weather'
 import './App.scss'
 
 const Home = () => {
@@ -29,12 +30,16 @@ const app = () => {
           <LinkContainer to="/time">
             <Nav.Link active={false}>Time</Nav.Link>
           </LinkContainer>
+          <LinkContainer to="/weather">
+            <Nav.Link active={false}>Weather</Nav.Link>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
     <Switch>
       <Route path='/' exact component={Home} />
       <Route path='/time' component={Time} />
+      <Route path='/weather' component={Weather} />
     </Switch>
   </React.Fragment>
 }
