@@ -38,7 +38,7 @@
   "scripts": {
     "build": "node node_modules/webpack/bin/webpack.js --mode production",
     "watch": "yarn build --watch",
-    "devserver": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --mode development --content-base dist/",
+    "devserver": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michiel van Wessem",
