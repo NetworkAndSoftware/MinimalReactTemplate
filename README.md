@@ -12,6 +12,8 @@ There's a series of directories which progressively add more functionality:
 | 01-basic          | just React                                           |
 | 02-redux          |  React with Redux & react-redux                      |
 | 03-react-bootstrp | Adds styles, react-bootstrap, sass and a  stylesheet |
+| 04-react-router   | Adds react router and connected-react-router         |
+| 05-redux-saga     | Adds redux-saga middleware                           |
 
 To run this, clone the repository, cd to one of the directories above and, assuming you have [Yarn](https://yarnpkg.com/) installed, run
 
