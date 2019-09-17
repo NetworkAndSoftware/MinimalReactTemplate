@@ -19,7 +19,7 @@ const app = () => {
     <Navbar fixed="top" bg="dark" variant="dark">
       <LinkContainer to="/" exact>
         <Navbar.Brand>
-       04-react-router
+       05-redux-saga
         </Navbar.Brand>
       </LinkContainer>
       <Navbar.Collapse>
